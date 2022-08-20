@@ -5,9 +5,156 @@ engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
+<div class="container">
+  <header class="d-flex justify-content-start align-items-end px-5 py-5">
+    <div class="header">
+      <h4 class="h4-title fw-bold me-5">Assignment</h4>
+    </div>
 
-<div class="box"></div>
+    <div class="dropdown">
+      <a class="text-direction-none  dropdown-toggle course" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        All Courses
+      </a>
+    
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
 
+    <div class="search-icon">
+      <span class="material-icons notification mx-3">search</span>
+      <span class="material-icons notification">notifications_active</span>
+    </div>
+  
+  </header>
+  <main class="d-flex">
+    <section>
+      <div class="content px-5">
+        <div class="dropdown">
+          <a class="text-direction-none  dropdown-toggle course fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All (4)
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="list-group ms-5 mt-2" style="width: 18rem;">
+    
+        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center p-3">
+          <div class="left-block">
+            <p class="sub-title">Chapter Assignment 2</p>
+            <p class="fw-bold mt-1">Please check this file…</p>
+          </div>
+          <div class="right-block">
+            <p class="sub-title text-end">4 hrs ago</p>
+            <p class="sub-title text-end mt-2">Emily Wang</p>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center p-3 click-menu">
+          <div class="left-block">
+            <p class="sub-title">Chapter Assignment 1</p>
+            <p class="fw-bold mt-1">My Homework</p>
+          </div>
+          <div class="right-block">
+            <p class="sub-title text-end">12 hrs ago</p>
+            <p class="sub-title text-end mt-2">David Xu</p>
+          </div>
+        </li>
+        <li class="list-group-item  d-flex justify-content-between align-items-center p-3 click-menu">
+          <div class="left-block">
+            <p class="sub-title">Final Assignment</p>
+            <p class="fw-bold mt-1">Have a problem with this…</p>
+          </div>
+          <div class="right-block">
+            <p class="sub-title text-end">18 hrs ago</p>
+            <p class="sub-title text-end mt-2">Tony Wei</p>
+          </div>
+        </li>
+        <li class="list-group-item  d-flex justify-content-between align-items-center p-3 click-menu">
+          <div class="left-block">
+            <p class="sub-title">Final Assignment</p>
+            <p class="fw-bold mt-1">Did I do it right?</p>
+          </div>
+          <div class="right-block">
+            <p class="sub-title text-end">19 hrs ago</p>
+            <p class="sub-title text-end mt-2">Christina Lin</p>
+          </div>
+        </li>
+      </ul>
+      
+    </section>
+
+    <section>
+
+      <p class="sub-title text-end mt-1">2 comments</p>
+
+      <div class="card ms-4 mt-2 w-80">
+        <div class="card-header d-flex justify-content-between align-items-center p-3">
+          <div class="card-context">
+            <p class="sub-title">Chapter Assignment 2 / HTML&CSS</p>
+            <p class="fw-bold mt-1">Please check this file for me, thanks!</p>
+          </div>
+          <span class="material-icons">more_vert</span>
+        </div>
+        <ul>
+          <li class="list-group-item  d-flex justify-content-start align-items-start p-3">
+            <img src="assets/images/emilywang.jpeg" class="photo">
+            <div class="right-block px-3">
+              <h3 class="fw-bold">Emily Wang</h3>
+              <p class="sub-title mt-2">10:38 AM (4 hours ago)</p>
+              <p class="content lh-base pe-4 pt-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the<span class="green-text"> img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+            
+              <div class="col-auto mt-3">  
+                <button type="submit" class="btn btn-light border border-secondary mb-3"> <span class="material-icons">attach_file</span>HW-2-David.zip</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <p class="border border-1 line"></p>
+      
+        <ul>
+          <li class="list-group-item  d-flex justify-content-start align-items-start p-3">
+            <img src="assets/images/andychen.jpeg" class="photo">
+            <div class="right-block px-3">
+              <ul class="top-block d-flex justify-content-between align-items-start">
+                <li>  
+                  <h3 class="fw-bold">Andy Chen (You)</h3>
+                  <p class="sub-title mt-2">13:24 AM (1 hours ago)</p>
+                </li>
+                <li>
+                  <span class="material-icons pe-3">star_border</span>
+                  <span class="material-icons">edit</span>
+                </li>
+              </ul>
+              <p class="content lh-base pe-4 pt-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:<br> <br>• adjust the <span class="green-text">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="green-text">middle </span>) or<br>• change the <span class="green-text">display</span> so it isn’t inline.</p>
+            
+          
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="container d-flex justify-content-between align-items-center pt-3">
+        <div class="click-left-right">
+          <span class="material-icons me-4">chevron_left </span>
+          <span class="material-icons">chevron_right</span>
+        </div>
+        <div class="button-reply">
+          <button type="button" class="btn btn-outline-success fw-bold px-4 mx-3">Mark as read</button>
+          <button type="button" class="btn btn-success fw-bold px-4">Reply</button>
+        </div>
+      </div>
+    </section>
+
+  </main>  
+
+</div>
