@@ -1,35 +1,22 @@
 .container{
-
+    
     margin: 0 auto;
+    margin-left: 296px;
+  
 
-    .header{
-        
-        .h4-title{
-            font-size: $h4-font-size;  
-        }
-    }
-    
-    .click-menu:hover{
-        background-color: $gray-400;
-    }
-
-    .search-icon{
-        margin-left: auto;
-    }
-    
     .sub-title{
         font-size: $mini-font-size;
     }
 
     .w-80{
-        width: 44rem;
+        max-width: 44rem;
     }
 
     .photo{
-   
-        max-width: 20%;
+
         height: 50px;
         border-radius: 50%;
+        object-fit: cover;
     }
     
 
@@ -47,6 +34,7 @@
         color:$gray-400;
         
     }
+
 
    
     
