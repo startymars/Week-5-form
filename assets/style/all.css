@@ -1,0 +1,78 @@
+body {
+  font-family: 'Lato','Roboto',sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none;
+  color: #212529; }
+  a:hover {
+    color: #198754; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.material-icons:hover {
+  color: #198754; }
+
+nav {
+  width: 296px;
+  height: 100vh;
+  position: fixed; }
+  nav .menu {
+    margin-left: 32px; }
+    nav .menu .logo {
+      margin-top: 40px; }
+    nav .menu-list {
+      margin-top: 40px; }
+      nav .menu-list .color {
+        color: #212529; }
+      nav .menu-list .color:hover {
+        color: #198754; }
+
+.name {
+  margin-top: auto; }
+  .name .author {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  .name .mail {
+    color: #6C757D; }
+
+.container {
+  margin: 0 auto;
+  margin-left: 296px; }
+  .container .sub-title {
+    font-size: 12px; }
+  .container .w-80 {
+    max-width: 44rem; }
+  .container .photo {
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .container .green-text {
+    color: #198754; }
+  .container .content {
+    font-size: 14px; }
+  .container .line {
+    margin: auto;
+    width: 90%;
+    color: #CED4DA; }
+
+.form-setting {
+  width: 100%;
+  height: 40px; }
+
+.form-subtitle {
+  font-size: 14px; }
+
+.form-block {
+  display: block;
+  width: 100%; }
+
+.table {
+  width: 96%; }
+
+/*# sourceMappingURL=all.css.map */
