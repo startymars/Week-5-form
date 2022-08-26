@@ -16,7 +16,7 @@
 
 <body>
 
-  <nav class="bg-light">
+  <nav class="nav-left bg-light">
      <div class="menu d-flex flex-column justify-content-start h-100 ">
         <h1 class="logo">
              <a href="index.html"><img src="assets/images/logo-ANSWER.svg" alt="logo"></a>
@@ -76,18 +76,15 @@
         <div class="name d-flex mb-3">
             <img src="assets/images/andychen.jpeg" class="author">
             <div class="information mx-3">
-                <p>Andy Chen</p>
+                <p class="mb-0">Andy Chen</p>
                 <a href="mailto:andy0401@mail.com" class="mail">andy0401@mail.com</a>
             </div>
         </div>
      </div>
     </nav>
 
-  <main></main>
-
-  </body>
-
-  
+  <main>
+    
 <div class="container">
   <header class="d-flex justify-content-start align-items-center px-5 py-5">
     <div class="header">
@@ -112,7 +109,10 @@
     </div>
   
   </header>
-  <main class="d-flex">
+ 
+  <div class="main-page d-flex">
+
+
     <section>
       <div class="content px-5">
         <div class="dropdown">
@@ -183,7 +183,7 @@
         <div class="card-header d-flex justify-content-between align-items-center">
           <div class="card-context">
             <small class="sub-title">Chapter Assignment 2 / HTML&CSS</small>
-            <p class="fw-bold">Please check this file for me, thanks!</p>
+            <p class="mb-0 fw-bold">Please check this file for me, thanks!</p>
           </div>
           <span class="material-icons">more_vert</span>
         </div>
@@ -193,7 +193,7 @@
           <div class="right-block px-3">
             <h6 class="fw-bold">Emily Wang</h6>
             <p class="sub-title mt-2">10:38 AM (4 hours ago)</p>
-            <p class="content lh-base pe-4 ">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the<span class="green-text"> img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+            <p class="content lh-base pe-4 ">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="green-text">div</code> is bigger than the height of the<span class="green-text"> img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
             
             <div class="col-auto mt-3">  
               <button type="submit" class="btn btn-light border border-secondary d-flex justify-content-center mb-3"> 
@@ -220,13 +220,13 @@
                 </div>  
                 
             </div>
-            <p class="content lh-base pe-4 ">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can:
+            <p class="content lh-base pe-4 ">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br> You can: </p>
               <ul>
-                <li class="text-indent">adjust the <span class="green-text">vertical-align</span> of the image to position it elsewhere <br>(e.g. the <span class="green-text">middle </span>) or<br></li>
-                <li class="text-indent">change the <span class="green-text">display</span> so it isn’t inline.</p></li>
+                <li class="text-indent">adjust the <code class="green-text">vertical-align</code> of the image to position it elsewhere <br>(e.g. the <code class="green-text">middle </code>) or<br></li>
+                <li class="text-indent">change the <code class="green-text">display</code> so it isn’t inline.</p></li>
               </ul>
            
-            
+           
           </div>
         </div>
 
@@ -244,9 +244,15 @@
       </div>
     </section>
 
-  </main>  
+    </div>
+
 
 </div>
+
+  </main>
+
+  </body>
+
 
 
  

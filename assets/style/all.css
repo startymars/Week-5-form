@@ -2,6 +2,9 @@ body {
   font-family: 'Lato','Roboto',sans-serif;
   line-height: 1.5; }
 
+main {
+  margin-left: 296px; }
+
 a {
   text-decoration: none;
   color: #212529; }
@@ -16,19 +19,19 @@ img {
 .material-icons:hover {
   color: #198754; }
 
-nav {
+.nav-left {
   width: 296px;
   height: 100vh;
   position: fixed; }
-  nav .menu {
+  .nav-left .menu {
     margin-left: 32px; }
-    nav .menu .logo {
+    .nav-left .menu .logo {
       margin-top: 40px; }
-    nav .menu-list {
+    .nav-left .menu-list {
       margin-top: 40px; }
-      nav .menu-list .color {
+      .nav-left .menu-list .color {
         color: #212529; }
-      nav .menu-list .color:hover {
+      .nav-left .menu-list .color:hover {
         color: #198754; }
 
 .name {
@@ -36,13 +39,14 @@ nav {
   .name .author {
     width: 40px;
     height: 40px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .name .mail {
     color: #6C757D; }
 
 .container {
-  margin: 0 auto;
-  margin-left: 296px; }
+  margin: 0 auto; }
   .container .sub-title {
     font-size: 12px; }
   .container .w-80 {
@@ -60,6 +64,21 @@ nav {
     margin: auto;
     width: 90%;
     color: #CED4DA; }
+  .container .right-block ul {
+    padding-left: 0;
+    text-indent: 2rem;
+    list-style: none; }
+  .container .right-block li {
+    position: relative; }
+  .container .right-block li::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #000; }
 
 .form-setting {
   width: 100%;
