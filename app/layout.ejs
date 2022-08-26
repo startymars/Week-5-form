@@ -16,7 +16,7 @@
 
 <body>
 
-  <nav class="bg-light">
+  <nav class="nav-left bg-light">
      <div class="menu d-flex flex-column justify-content-start h-100 ">
         <h1 class="logo">
              <a href="index.html"><img src="assets/images/logo-ANSWER.svg" alt="logo"></a>
@@ -76,18 +76,20 @@
         <div class="name d-flex mb-3">
             <img src="assets/images/andychen.jpeg" class="author">
             <div class="information mx-3">
-                <p>Andy Chen</p>
+                <p class="mb-0">Andy Chen</p>
                 <a href="mailto:andy0401@mail.com" class="mail">andy0401@mail.com</a>
             </div>
         </div>
      </div>
     </nav>
 
-  <main></main>
+  <main>
+    <%- contents %>
+  </main>
 
   </body>
 
-  <%- contents %>
+
 
  
 

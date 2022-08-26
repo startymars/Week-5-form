@@ -1,9 +1,7 @@
 .container{
     
     margin: 0 auto;
-    margin-left: 296px;
-  
-
+   
     .sub-title{
         font-size: $mini-font-size;
     }
@@ -34,13 +32,29 @@
         color:$gray-400;
         
     }
-
-
+    
    
+
+    .right-block ul {
+        padding-left: 0;
+        text-indent: 2rem;
+        list-style: none;
+       }
+       .right-block li {
+        position: relative;
+       }
+       .right-block li::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background: #000;
+       }
     
 }
-
-
 
 
 
